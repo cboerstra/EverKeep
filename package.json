@@ -1,0 +1,21 @@
+{
+  "name": "everkeep",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "server.js",
+  "engines": {
+    "node": ">=22.18.0"
+  },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "start": "node server.js",
+    "test": "node --test",
+    "db:setup": "node scripts/setup-db.mjs"
+  },
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.850.0",
+    "mysql2": "^3.14.0",
+    "openid-client": "^6.6.0"
+  }
+}
